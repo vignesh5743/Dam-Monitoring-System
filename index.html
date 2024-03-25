@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload and Prediction</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Upload and Prediction</h1>
+        
+        <!-- File upload form -->
+        <form id="upload-form" enctype="multipart/form-data">
+            <label for="file-upload" class="file-label">
+                <span>Upload Images</span>
+                <input type="file" id="file-upload" name="files[]" accept=".jpg, .jpeg, .png" multiple>
+            </label>
+            <button type="submit" id="predict-button">Predict</button>
+        </form>
+
+        <!-- Display predictions -->
+        <div id="predictions" class="hidden">
+            <h2>Predictions:</h2>
+            <ul id="predictions-list"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
